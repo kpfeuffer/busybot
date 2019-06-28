@@ -1,6 +1,7 @@
 ﻿namespace BusyBot.Controllers
 {
-    using BusyBot.Models;
+    using Microsoft.Graph;
+    using Microsoft.Bot.Connector;
     using System;
     using System.Collections.Generic;
     using System.Configuration;
@@ -13,6 +14,14 @@
         {
 
         }
+
+        //[Authorize(Roles = "Extension")]
+        //[HttpPost]
+        //public IHttpActionResult Post([FromBody] Activity activity)
+        //{
+        //    //return await 
+
+        //}
 
         [HttpGet]
         [Route("api/app")]
